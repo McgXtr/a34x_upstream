@@ -16,4 +16,3 @@ make -C $(pwd) O=$(pwd)/out KCFLAGS=-w CONFIG_SECTION_MISMATCH_WARN_ONLY=y a34x_
 make menuconfig
 make -C $(pwd) O=$(pwd)/out KCFLAGS=-w CONFIG_SECTION_MISMATCH_WARN_ONLY=y -j$(nproc)
 
-cp out/arch/arm64/boot/Image $(pwd)/arch/arm64/boot/Image
